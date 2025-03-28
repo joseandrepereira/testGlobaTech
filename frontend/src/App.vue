@@ -1,34 +1,48 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div class="app">
+    <header>
+      <div class="wrapper">
+        <img alt="Global Tech logo" class="logo" src="@/assets/globalTech.png" />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
-  <RouterView />
+        <nav>
+          <RouterLink to="/">Início</RouterLink>
+          <RouterLink to="/about">Sobre</RouterLink>
+        </nav>
+      </div>
+    </header>
+  
+    <RouterView />
+  </div>
 </template>
 
+<style>
+body {
+  background-color: whitesmoke;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0; 
+}
+</style>
+
 <style scoped>
+
 header {
-  line-height: 1.5;
-  max-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .logo {
   display: block;
   margin: 0 auto 2rem;
+  width: 200px;
+  height: auto;
 }
 
 nav {
@@ -36,10 +50,11 @@ nav {
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;
+  display: flex;
 }
 
 nav a.router-link-exact-active {
-  color: var(--color-text);
+  color: #0D72FF;
 }
 
 nav a.router-link-exact-active:hover {
@@ -50,6 +65,7 @@ nav a {
   display: inline-block;
   padding: 0 1rem;
   border-left: 1px solid var(--color-border);
+  color: #B7B7B7;
 }
 
 nav a:first-of-type {

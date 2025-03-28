@@ -37,7 +37,7 @@ schema_view = get_schema_view(
 )
 
 router = DefaultRouter()
-router.register(r'people', PersonViewSet)
+router.register(r'people', PersonViewSet, basename='people')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
