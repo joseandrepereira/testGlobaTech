@@ -111,4 +111,4 @@ O botão "Peso Ideal" na lista de pessoas chama o endpoint /api/people/{id}/calc
 Sinta-se à vontade para abrir issues ou enviar pull requests para melhorias!
 
 ## Licença
-Este projeto está sob a licença MIT.
+Este projeto está sob a [Licença MIT](LICENSE).
