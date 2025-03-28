@@ -1,0 +1,8 @@
+django==5.1.7
+djangorestframework==3.14
+psycopg2-binary==2.9.6
+django-cpf-cnpj
+django-extensions
+django-import-export
+django-filter
+drf-yasg==1.21.7
