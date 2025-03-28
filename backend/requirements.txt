@@ -6,3 +6,4 @@ django-extensions
 django-import-export
 django-filter
 drf-yasg==1.21.7
+django-cors-headers
